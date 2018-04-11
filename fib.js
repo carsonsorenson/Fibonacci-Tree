@@ -121,7 +121,7 @@ function fibTree(fibRecursion){
     return {'result_':result, 'innerDiv_':innerDiv};
 }
 
-slider.oninput = function(){
+slider.onchange = function(){
     var value = slider.value;
     var existingList = div.querySelector('div#list');
     if (existingList){
@@ -132,7 +132,7 @@ slider.oninput = function(){
     div.appendChild(list.val);
 }
 
-treeSlider.oninput = function(){
+treeSlider.onchange = function(){
     var value = treeSlider.value;
     var existingTree = treeDiv.querySelector('div#tree');
     if (existingTree){
